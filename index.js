@@ -45,19 +45,16 @@
 
     support.cssAnimation = (support.transform3d || support.transform) && support.transition;
 
-    var eventTypes = ['touch', 'mouse'];
+    var eventTypes = ['touch'];
     var events = {
         start: {
-            touch: 'touchstart',
-            mouse: 'mousedown'
+            touch: 'touchstart'
         },
         move: {
-            touch: 'touchmove',
-            mouse: 'mousemove'
+            touch: 'touchmove'
         },
         end: {
-            touch: 'touchend',
-            mouse: 'mouseup'
+            touch: 'touchend'
         }
     };
 
@@ -144,16 +141,12 @@
         switch (event.type) {
             // start
             case events.start.touch: self._touchStart(event, 'touch'); break;
-            case events.start.mouse: self._touchStart(event, 'mouse'); break;
 
             // move
             case events.move.touch: self._touchMove(event, 'touch'); break;
-            case events.move.mouse: self._touchMove(event, 'mouse'); break;
 
             // end
             case events.end.touch: self._touchEnd(event, 'touch'); break;
-            case events.end.mouse: self._touchEnd(event, 'mouse'); break;
-
             // click
             case 'click': self._click(event); break;
         }
