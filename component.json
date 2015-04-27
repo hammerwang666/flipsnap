@@ -1,13 +1,9 @@
 {
   "name": "flipsnap",
-  "repo": "flipsnap",
+  "repo": "zhenfan0753/flipsnap",
   "description": "Prov  ides UI of snap and slide",
   "version": "0.0.1",
   "keywords": ["mobile","ui"],
   "scripts": ["index.js"],
-  "dependencies": {},
-  "remotes": [
-    "https://github.com/zhenfan0753/flipsnap"
-  ],
   "license": "MIT"
 }
